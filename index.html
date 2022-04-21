@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css" type="text/css" />
+  <script src="./js/createMaps.js" defer></script>
+  <script src="./js/control.js" defer></script>
+  <script src="./js/factories.js" defer></script>
+  <script src="./js/createDrawings.js" defer></script>
+  <script src="./js/selectorsCallbacksEvents.js" defer></script>
+  <script src="./js/utils.js" defer></script>
+  <script src="./js/game.js" defer></script>
+  <title>Packman</title>
+</head>
+<body>
+  
+  <section class="c-message" data-c_message>
+    <h1 data-message>YOU WIN!!</h1>
+  </section>
+  
+  <canvas></canvas>
+  
+  <section class="c-control active" data-control_buttons>
+    <button data-position="a" type="click"> &#5130; </button>
+    <div class="c-control__vertical">
+      <button data-position="w" type="click"> &#5123; </button>
+      <button data-position="stop" class="stop"> STOP </button>
+      <button data-position="s" type="click"> &#5121; </button>
+    </div>
+    <button data-position="d" type="click"> &#5125; </button>
+  </section>
+  
+  <section class="c-stick" data-control_joystick>
+    <img src="./src/joystick/joystick-base.png" />
+    <div data-joystick>
+      <img src="./src/joystick/joystick-blue.png" />
+    </div>
+  </section>
+  
+  <section class="c-pause" data-pause>
+    <img class="pause" src="./src/pause.png" alt="pause" />
+  </section>
+  
+  <section class="c-settings" data-settings>
+    <ul>
+      <img src="./src/logo.png" alt="logo" />
+      <li data-settings_card="continueGame"> 
+        <p>Continuar jogo</p>
+      </li>
+      <li class="c-options-control"> 
+        <label>Controle</label>
+        <select data-select_control name="select">
+          <option value="buttons">Botões</option>
+          <option value="Joystick">Joystick</option>
+        </select>
+      </li>
+      <li data-settings_card="restart">
+        <p>Reiniciar</p>
+      </li>
+      <li data-settings_card="reset">
+        <p>Resetar</p>
+      </li>
+    </ul>
+  </section>
+  
+</body>
+</html>
